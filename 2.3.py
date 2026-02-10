@@ -1,4 +1,4 @@
-# WEEK 2 - DYNAMIC PROGRAMMING
+# WEEK 2 - DYNAMIC 
 
 # ---------- Assignment 1: Fibonacci using Memoization ----------
 # Input:
