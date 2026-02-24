@@ -64,27 +64,26 @@ for u, v in queries:
         print("NO")
 
 #✅ Sample Input (Given)
-Users = 7
-Friendships = 5
-(0,1)
-(1,3)
-(2,4)
-(5,6)
-(3,4)
-
-Queries:
-(0,4)
-(2,6)
-(5,6)
-
+# Users = 7
+# Friendships = 5
+# (0,1)
+# (1,3)
+# (2,4)
+# (5,6)
+# (3,4)
+#
+# Queries:
+# (0,4)
+# (2,6)
+# (5,6)
+#
 #✅ Output
-YES
-NO
-YES
+# YES
+# NO
+# YES
 
 
-
-#city Road Connectivity Management (DSU / Union-Find)
+#City Road Connectivity Management (DSU / Union-Find)
 
 # Disjoint Set Union (Union-Find)
 class DSU:
@@ -134,7 +133,7 @@ roads = [(1, 2), (2, 3), (4, 5), (6, 7), (5, 6)]
 queries = [(1, 3), (1, 7), (4, 7)]
 
 # Initialize DSU
-dsu = DSU(n)
+dsu = DSU(n + 1)  # intersections are 1-indexed
 
 # Process roads (Union operations)
 for u, v in roads:
@@ -148,21 +147,20 @@ for u, v in queries:
         print("NO")
 
 #✅ Sample Input (Given)
-Intersections = 8
-Roads = 5
-(1,2)
-(2,3)
-(4,5)
-(6,7)
-(5,6)
-
-Queries:
-(1,3)
-(1,7)
-(4,7)
-
-
+# Intersections = 8
+# Roads = 5
+# (1,2)
+# (2,3)
+# (4,5)
+# (6,7)
+# (5,6)
+#
+# Queries:
+# (1,3)
+# (1,7)
+# (4,7)
+#
 #✅ Output
-YES
-NO
-YES
+# YES
+# NO
+# YES
